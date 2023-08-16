@@ -15,10 +15,10 @@
 :root{
     --cor-fundo: #fdfdfd;
     --cor-texto: #333;
-    --cor-principal: #6e44f7;
+    --cor-principal: #14642a;
     --cor-branca: #fdfdfd;
     --cor_sombra: rgba(0, 0, 0, .2);
-    --header-claro: #8a69f5;
+    --header-claro: #13762f;
 }
 
 .modo-escuro{
@@ -51,13 +51,13 @@ body{
 
 .header.sticky{
     transition: .4s;
-    background: var(--bg-color);
-    box-shadow: 0 .1rem 1rem var(--shadow-color); 
+    background: var(--cor-fundo);
+    box-shadow: 0 .1rem 1rem var(--cor_sombra); 
 }
 
 .logo{
     font-size: 3.6rem;
-    color: var(--main-color);
+    color: var(--cor-principal);
     font-weight: bold;
     cursor: default;
     margin-right: auto;
@@ -66,13 +66,13 @@ body{
 .navbar a{
     position: relative;
     font-size: 2.2rem;
-    color: var(--text-color);
+    color: var(--cor-texto);
     font-weight: 500;
     margin-right: 3.5rem;
 }
 
 .header.sticky .navbar a.active{
-    color: var(--main-color);
+    color: var(--cor-principal);
 }
 
 
@@ -84,33 +84,111 @@ body{
     bottom: -6px;
     width: 100%;
     height: .2rem;
-    background: var(--white-color);
+    background: var(--cor-branca);
 }
 
 
 .header.sticky .navbar a::before{
-    background: var(--main-color);
+    background: var(--cor-principal);
     opacity: .7;
 }
 
 #darkMode-icon{
     font-size: 2.4rem;
-    color: var(--main-color);
+    color: var(--cor-principal);
     cursor: pointer;
 }
 
 .header.sticky #darkModeIcon{
-    color: var(--text-color);
+    color: var(--cor-texto);
     opacity: .9;
 }
 
 #menu-icon{
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: var(--cor-texto);
     display: none;
 }
 
 section{
     min-height: 100vh;
     padding: 10rem 10% 2rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .conteudo-home{
+    max-width: 80rem;
+    text-align: center;
+}
+
+.conteudo-home h3{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: .3;
+}
+
+.conteudo-home h1{
+    font-size: 5.9rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.conteudo-home p{
+    font-size: 2.7rem;
+}
+
+span {
+    color: var(--cor-principal);
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #125124;
+    color: var(--cor-branca);
+}
+
+.heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.conteudo-sobre h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.conteudo-sobre h3{
+    font-size: 2rem;
+}
+
+.conteudo-sobre p{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--cor-principal);
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    box-shadow: 0.2rem .5rem var(--cor_sombra);
+    color: #fdfdfd;
+    letter-spacing: 1.rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    background: transparent;
+    color: var(--main-color);
 }
