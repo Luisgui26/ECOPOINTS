@@ -192,3 +192,44 @@ span {
     background: transparent;
     color: var(--main-color);
 }
+
+.objetivos{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.objetivos h2{
+   margin-bottom: 5rem; 
+}
+
+.objetivos .container-objetivos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.container-objetivos .caixa-objetivos{
+    flex: 1 1 30rem;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+
+
+.caixa-objetivos i{
+    font-size: 7rem;
+}
+
+.caixa-objetivos h3{
+    font-size: 2.6rem;
+    transition: .4s ease;
+}
+
+
+.caixa-objetivos p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
