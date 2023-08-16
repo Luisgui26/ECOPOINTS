@@ -235,3 +235,89 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.premios{
+    padding-bottom: 10rem;
+}
+
+.premios h2{
+    margin-bottom: 4rem;
+}
+
+.premios .container-premios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.container-premios .caixa-premios{
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem  rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.caixa-premios img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.caixa-premios:hover img{
+    transform: scale(1.1);
+}
+
+.caixa-premios .descricao-premios{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0 ,.3), var(--cor-principal));
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease; 
+}
+
+.caixa-premios:hover .descricao-premios{
+    opacity: 1;
+}
+
+.descricao-premios h4{
+    font-size: 2.6rem;
+}
+
+.descricao-premios h5{
+    font-size: 2.3rem;
+}
+
+.descricao-premios p{
+    font-size: 1.4rem;
+    margin: .3rem 0 ;
+}
+
+.btn-premios{
+    display: inline-block;
+    padding: .6rem 2.1rem;
+    background: #fdfdfd;
+    border-radius: .6rem;
+    font-size: 1.2rem;
+    box-shadow: 0.2rem .5rem var(--cor_sombra);
+    color: var(--cor-principal);
+    letter-spacing: 1.rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+    margin-top: 1rem;
+}
+
+.btn-premios:hover{
+    background: transparent;
+    color: var(--main-color);
+}
