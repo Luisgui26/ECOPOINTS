@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif ;
+    transition: 0.1s ease;
+}
+
+:root{
+    --cor-fundo: #fdfdfd;
+    --cor-texto: #333;
+    --cor-principal: #6e44f7;
+    --cor-branca: #fdfdfd;
+    --cor_sombra: rgba(0, 0, 0, .2);
+    --header-claro: #8a69f5;
+}
+
+.modo-escuro{
+    --cor-fundo: #0b061f;
+    --cor-texto: #fdfdfd;
+    --cor-branca: rgba(0, 0, 0, .7)
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.6rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky{
+    transition: .4s;
+    background: var(--bg-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color); 
+}
+
+.logo{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a.active{
+    color: var(--main-color);
+}
+
+
+
+.navbar a.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: var(--white-color);
+}
+
+
+.header.sticky .navbar a::before{
+    background: var(--main-color);
+    opacity: .7;
+}
+
+#darkMode-icon{
+    font-size: 2.4rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.header.sticky #darkModeIcon{
+    color: var(--text-color);
+    opacity: .9;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;
+}
