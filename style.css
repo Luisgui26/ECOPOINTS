@@ -22,7 +22,7 @@
 }
 
 .modo-escuro{
-    --cor-fundo: #0b061f;
+    --cor-fundo: #232226;
     --cor-texto: #fdfdfd;
     --cor-branca: rgba(0, 0, 0, .7)
 }
@@ -152,7 +152,7 @@ span {
     align-items: center;
     gap: 4rem;
     background-color: #125124;
-    color: var(--cor-branca);
+    color: #fdfdfd;
 }
 
 .heading{
@@ -221,6 +221,7 @@ span {
 
 .caixa-objetivos i{
     font-size: 7rem;
+    color: var(--cor-principal)
 }
 
 .caixa-objetivos h3{
@@ -233,3 +234,4 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+

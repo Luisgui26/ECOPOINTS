@@ -28,3 +28,11 @@ menuIcon.classList.remove('bx-x')
 navbar.classList.remove('active');
 
  };
+
+let darkModeIcon = document.querySelector('#darkMode-icon')
+
+darkModeIcon.onclick = () =>{
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('modo-escuro');
+};
+
