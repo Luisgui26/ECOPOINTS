@@ -32,7 +32,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde id adipisci autem explicabo tenetur,
         repellat dolorem rem officia optio perferendis quae ipsam voluptas. Maxime dolorem sapiente optio, fugit
         magnam quae!</p>
-        <a href="#cadastro" class="btn">Cadastre-se</a>
+      <a href="#cadastro" class="btn">Cadastre-se</a>
     </div>
 
   </section>
@@ -159,22 +159,31 @@
     </div>
   </section>
 
+
+ 
+
   <section class="cadastro" id="cadastro">
     <h2 class="heading">Cadastro</h2>
-   <form>
-    <div class="caixa-input">
-      <input type="text" name="name" placeholder="Nome Completo">
-      <input type="email" name="email" placeholder="Email">
-    </div>
-    <div class="caixa-input">
-      <input type="password" name="password" placeholder="Senha">
-      <input type="number" name="cpf" placeholder="CPF">
-    </div>
+    <form>
+      <div class="caixa-input">
+        <input type="text" id="nome" placeholder="Nome Completo" >
+        <input type="email" id="email" placeholder="Email" >
+      </div>
+      <div class="caixa-input">
+        <input type="password" id="senha" placeholder="Senha" >
+        <input type="number" id="cpf" placeholder="CPF" >
+      </div>
 
 
-    <button class="btn">Concluir</button>
-   </form> 
- </section>
+      <button class="btn" type="submit" onclick="validarFormulario(event)">Concluir</button>
+
+    </form>
+  </section>
+
+  <div id="mensagem" class="mensagem-escondida">
+    <h3>Cadastro efetuado com sucesso!</h3>
+    <button class="btn" onclick="fechar()">Fechar</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
